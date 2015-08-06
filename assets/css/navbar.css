@@ -1,0 +1,29 @@
+/*/*
+http://stackoverflow.com/questions/11816819/put-a-logo-on-twitter-bootstrap-navbar-without-resizing-the-navbar
+*/
+
+.navbar {
+    background-color: #00CC99;
+/*    min-height:70px;*/
+}
+
+/*.navbar .brand > img { 
+    max-height: 40px;
+    max-width: 40px; 
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0; 
+}
+
+.navbar-header {
+    position: absolute;
+    bottom: 12px;
+    margin-left: 10px;
+}*/
+
+.navbar-brand{ 
+    font-size: 38px;
+    font-family: big-noodle;
+}
+
+

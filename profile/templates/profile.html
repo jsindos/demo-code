@@ -1,0 +1,14 @@
+<div class="container">
+	<h1>My Profile</h1>
+	<div ng-repeat="course in vm.courses.results">
+		<profile-course info="course"></profile-course>
+	</div>
+
+	<div ng-show ="vm.displayNoCoursesMsg">
+		<h2>You are not currently enrolled in any course.</h2>
+	</div>	
+
+	<a href="/join_class" >
+		<button class="btn btn-primary col-xs-8" id="join-btn">Join a Class</button>
+	</a>
+</div>

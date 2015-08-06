@@ -1,0 +1,7 @@
+<div class="container">
+	<h1>Learning Module: {{vm.learningModule.description}}</h1>
+		<div class="row" ng-repeat="childContent in vm.learningModule.content">
+			<content-parent class="col-md-12 panel panel-default" info="childContent"></content-parent>
+		</div>
+		<button class="btn btn-primary row" ng-click="vm.completeModule()" ng-disabled="vm.quizzesIncomplete()">Submit</button>
+</div>

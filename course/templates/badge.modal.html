@@ -1,0 +1,16 @@
+<div class="modal-header" style="min-height:75px">
+	<h3 class="modal-title" style ="float:left">{{vm.info.name}}</h3>
+	<p style="float:right">by {{vm.info.creator}}</p>
+</div>	
+
+<div class="modal-body" style="min-height:150px;padding-top:0">
+	<div >
+		<img style="width:100px; height:100px; float:left;" alt="[insert badge/pin image here]" ng-src="{{vm.info.badge_image}}">
+		<p style= "float:right">{{vm.info.description}}</p>
+	</div>
+</div>
+
+<div class="modal-footer" style="padding-top:0">			
+	<button class="btn btn-success" ng-click="vm.ok()" ng-hide="vm.canEarn">OK</button>
+	<button type="button" class="btn btn-success" ng-show="vm.canEarn" ng-click="vm.getBadge()">Get Badge!</button>
+</div>

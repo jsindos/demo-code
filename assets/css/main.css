@@ -1,0 +1,85 @@
+/*
+ * Offset from the fixed navbar to avoid overlay.
+ */
+ 
+/*
+body {
+	padding-top: 70px;
+}
+*/
+
+body {
+    background-color: #FAF8FA;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+	font-family: big-noodle;
+}
+
+.btn-primary {
+	background-color: #00CC99;
+}
+
+.btn-primary:not(.btn-link):not(.btn-flat) {
+	background-color: #00CC99;
+}
+
+#middle {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#acco-blurb h1{
+	text-align: center;
+	font-size: 72px;
+}
+
+#acco-blurb h4{
+	text-align: center;
+	font-size: 26px;
+}
+
+#acco-blurb p{
+	text-align: justify;
+	margin: auto;
+	font-size: 16px;
+
+}
+
+#acco-panel-e-heading {
+	background-color: #336699;
+}
+#acco-panel-i-heading {
+	/*background-color: #663333;*/
+	background-color: #999999;
+}
+
+hr {
+	background-color: #008563;
+	height: 1px;
+}
+
+#center-well, img {
+	margin: auto;
+}
+
+#earner-btn:hover {
+	background-color: #AAD7FF;
+}
+
+#not-done {
+	text-decoration: line-through;
+}
+
+#join-btn {
+	margin-left: 16.66666667%
+}
+
+/*#badge-img {
+	box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}*/

@@ -1,0 +1,13 @@
+<div class="modal-header" style="min-height:75px">
+	<h3 class="modal-title" style ="float:left">Congratulations {{vm.earnedBadge.earner.first_name}}. You earned {{vm.earnedBadge.badge.name}}!</h3>
+	<p style ="float:right">Badge created by {{vm.earnedBadge.badge.creator}}</p>
+</div>
+<div class="modal-body"style ="min-height:150px">
+	<div>
+		<img style ="width:100px; height:100px; float:left;"  alt="[insert badge/pin image here]" ng-src="{{vm.earnedBadge.badge.badge_image}}">
+		<p style="float:right">{{vm.earnedBadge.badge.description}}</p>
+	</div>
+</div>
+<div class="modal-footer">			
+	<button class="btn btn-success" ng-click="$close()">Return to profile</button>
+</div>

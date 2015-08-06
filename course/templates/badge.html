@@ -1,0 +1,9 @@
+<img class="btn btn-default btn-circle" popover-template="vm.badgePopover.templateUrl"  popover-trigger="mouseenter" ng-click="vm.openBadge()"style="width:150px; height:150px;" ng-src="{{info.badge_image}}" ng-style="badgeStyle" ng-class="badgePulse">
+<div class="badge-name">
+	<h4 class="title display-inline">{{info.name}}</h4>
+	<i class="mdi-action-done" style="color:rgb(66,133,244); height:14px" ng-show="vm.earned"></i>
+</div>
+
+<div class="pin" ng-repeat="pin in info.pins">
+	<pin-info info="pin"></pin-info>
+</div>

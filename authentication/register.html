@@ -1,0 +1,73 @@
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h1>Register</h1>
+
+    <div class="well">
+      <form role="form" ng-submit="vm.register()">
+        <div class="form-group">
+          <label for="register__email">Email</label>
+          <input type="email" class="form-control" id="register__email" ng-model="vm.email" placeholder="" />
+        </div>
+
+        <div class="form-group">
+          <label for="register__password">Password</label>
+          <input ng-change = "vm.checkPW()" type="password" class="form-control" id="register__password" ng-model="vm.password1" placeholder="" />
+        </div>
+
+        <div class="form-group">
+          <label for="register__password">Confirm Password</label>
+          <input ng-change = "vm.checkPW()" type="password" class="form-control" id="register__password" ng-model="vm.password2" placeholder="" />
+		  <div><font color="red" >{{vm.pwError}}</font></div>
+        </div>
+		
+        <div class="form-group">
+          <label for="register__firstname">First Name</label>
+          <input type="text" class="form-control" id="register__firstname" ng-model="vm.first_name" placeholder="" />
+        </div>
+
+        <div class="form-group">
+          <label for="register__lastname">Last Name</label>
+          <input type="text" class="form-control" id="register__lastname" ng-model="vm.last_name" placeholder="" />
+        </div>
+
+		<!--
+		<div class="form-group">
+			<div class="btn-group">
+				<label class="btn btn-primary" ng-model="vm.user_type" btn-radio="'EARNER'">Earner</label>
+				<label class="btn btn-primary" ng-model="vm.user_type" btn-radio="'ISSUER'">Issuer</label>
+			</div>
+		</div>
+		-->
+
+        <div class="form-group">
+			<label for="dp3">Date of Birth (YYYY-MM-DD)</label>
+			<input type="text" 
+            class="form-control date" 
+            placeholder="yyyy-mm-dd" 
+            ng-click="vm.dateFrom=true"
+            datepicker-popup="yyyy-MM-dd" 
+            ng-model="vm.date_of_birth" 
+            is-open="vm.dateFrom" 
+            min-date="minDate" 
+            max-date="'2015-06-22'" 
+            close-text="Close" >
+          <!--div class="input-append date" id="dp3" data-date="2012-02-12" data-date-format="yyyy-mm-dd">
+            <input class="span2" size="16" type="text" value="2012-02-12" ng-model="vm.date_of_birth">
+            <span class="add-on"><i class="icon-th"></i></span>
+          </div-->
+        </div>
+
+		
+		<div class = "form-group">
+			<input type = "checkbox" ng-model="vm.agree">
+			I have read and agree to the
+			<a href="/terms-conditions/" target="_blank">Terms & Conditions</a>.
+		</div>
+			
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" ng-disabled = "!vm.agree || !vm.matchingPasswords">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
